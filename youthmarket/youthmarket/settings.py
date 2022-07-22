@@ -38,7 +38,7 @@ def get_secret(setting):
         raise ImproperlyConfigured(error_msg)
 # heroku배포 참고: https://eunjin3786.tistory.com/244
 # SECRET_KEY = get_secret("SECRET_KEY")
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', get_secret("SECRET_KEY"))
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', "django-insecure-ageps9g1*oesnqqs@93q!8fvxruzpyvl--+bp$ysme$a*fm%qd")
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # DEBUG = True
